@@ -15,7 +15,10 @@ class ConnectionClass:
             return  None
 
 class EmployeeManager(ConnectionClass):
+<<<<<<< HEAD
 
+=======
+>>>>>>> b46f36ab78dabf625d91016570f64227642e43b3
     def post(self,**kwargs):
         try:
             self.connect = super().get_connection()
@@ -28,6 +31,7 @@ class EmployeeManager(ConnectionClass):
         except Exception as e:
             print(e)
 
+<<<<<<< HEAD
     def get(self):
         try:
             self.connect = super().get_connection()
@@ -42,6 +46,8 @@ class EmployeeManager(ConnectionClass):
             # print(e)
             return []
 
+=======
+>>>>>>> b46f36ab78dabf625d91016570f64227642e43b3
 
     def get_object(self,id = None):
         try:
@@ -118,4 +124,8 @@ employee_instance = EmployeeManager()
 # employee_instance.retrieve(id = 3)
 # employee_instance.delete(id = 5)
 
+<<<<<<< HEAD
 # employee_instance.put(id = 5, name = "KrishnaPriya", place = "PTA", salary = 3000)
+=======
+employee_instance.put(id = 5, name = "KrishnaPriya", place = "PTA", salary = 3000)
+>>>>>>> b46f36ab78dabf625d91016570f64227642e43b3
